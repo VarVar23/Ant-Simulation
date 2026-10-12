@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dada89172689d647bdc1a3733486f90, type: 3}
+  m_Name: AntSO
+  m_EditorClassIdentifier: Assembly-CSharp::AntSimulation.AntSO
+  <Prefab>k__BackingField: {fileID: 4006893986936782058, guid: b61dbb59a1f225347a46f3715cbe2bc9, type: 3}
+  <SpawnSquare>k__BackingField: 25
+  <StartCount>k__BackingField: 200

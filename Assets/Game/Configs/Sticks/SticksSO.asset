@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b55bfbf25697904381b3fb54f5c685c, type: 3}
+  m_Name: SticksSO
+  m_EditorClassIdentifier: Assembly-CSharp::SticksSO
+  <Prefab>k__BackingField: {fileID: 3856689842945112997, guid: e46b33490ff0821479dea94f19ffa3f4, type: 3}
+  <SpawnSquare>k__BackingField: 25
+  <SpawnTime>k__BackingField: 1
+  <StartCount>k__BackingField: 20
+  <MaxCountSpawned>k__BackingField: 50
