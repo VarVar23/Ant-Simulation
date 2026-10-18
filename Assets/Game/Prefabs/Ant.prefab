@@ -952,7 +952,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8649658781073145506}
   - component: {fileID: 966255262087175864}
-  - component: {fileID: 3253772005368694158}
   - component: {fileID: 1954495182934717894}
   - component: {fileID: 4006893986936782058}
   m_Layer: 0
@@ -1000,21 +999,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &3253772005368694158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6063941301390003060}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7b5f0cbcc1784645861955b88a24808, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SetTarget
-  _agent: {fileID: 966255262087175864}
-  _world: {fileID: 0}
-  Target: {fileID: 0}
 --- !u!114 &1954495182934717894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1074,7 +1058,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81bc93a12c73ecf4eb81ef21fe9f07e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AntSimulation.AntView
-  Target: {fileID: 0}
   <NavMeshAgent>k__BackingField: {fileID: 966255262087175864}
   <BehaviorGraphAgent>k__BackingField: {fileID: 1954495182934717894}
 --- !u!1 &6603166806973498756

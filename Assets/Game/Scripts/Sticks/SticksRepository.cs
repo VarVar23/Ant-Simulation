@@ -23,7 +23,7 @@ namespace AntSimulation
             return _freeSticks.Count;
         }
 
-        public StickView GetRandomStick()
+        public StickView GetRandomFreeStick()
         {
             if (_freeSticks.Count == 0) return null;
 

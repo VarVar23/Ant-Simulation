@@ -3,7 +3,7 @@
     public interface ISticksRepository
     {
         void Add(StickView view);
-        StickView GetRandomStick();
+        StickView GetRandomFreeStick();
         void RemoveStickIsFree(StickView view);
         public int GetCount();
     }

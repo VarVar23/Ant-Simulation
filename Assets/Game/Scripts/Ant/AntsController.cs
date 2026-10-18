@@ -2,17 +2,15 @@ using Zenject;
 
 namespace AntSimulation
 {
-    public class AntController : IInitializable, ITickable
+    public class AntsController : IInitializable
     {
-        private IAntMoveRepository _moveRepository;
         private IAntFactory _factory;
         private AntSO _data;
 
-        public AntController(IAntFactory factory, AntSO data, IAntMoveRepository moveRepository)
+        public AntsController(IAntFactory factory, AntSO data)
         {
             _factory = factory;
             _data = data;
-            _moveRepository = moveRepository;
         }
 
         public void Initialize()
@@ -21,11 +19,6 @@ namespace AntSimulation
             {
                 _factory.Create();
             }
-        }
-
-        public void Tick()
-        {
-            _moveRepository.Move();
         }
     }
 }

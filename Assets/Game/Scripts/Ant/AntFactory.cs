@@ -5,16 +5,16 @@ namespace AntSimulation
 {
     public class AntFactory : IAntFactory
     {
-        private IAntMoveRepository _moveRepository;
         private AntSO _data;
         private Transform _parent;
+        private HomeView _home;
         private DiContainer _container;
 
-        public AntFactory(DiContainer container, AntSO data, IAntMoveRepository moveRepository)
+        public AntFactory(DiContainer container, AntSO data, HomeView home)
         {
             _data = data;
             _container = container;
-            _moveRepository = moveRepository;
+            _home = home;
         }
 
         public AntView Create()
@@ -27,8 +27,8 @@ namespace AntSimulation
             
             var agent = _container.InstantiateComponent<AntAgent>(ant.gameObject);
             ant.BehaviorGraphAgent.SetVariableValue("Ant Agent", agent);
+            ant.BehaviorGraphAgent.SetVariableValue("Home", _home.transform);
             ant.gameObject.name = "Ant";
-            _moveRepository.Add(ant);
 
             return ant;
         }

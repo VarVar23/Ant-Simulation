@@ -12,14 +12,4 @@ public partial class CheckHasTargetCondition : Condition
     {
         return Target.Value != null;
     }
-
-    public override void OnStart()
-    {
-
-    }
-
-    public override void OnEnd()
-    {
-
-    }
 }
